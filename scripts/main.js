@@ -1,4 +1,4 @@
-let unit = 20;
+let unit = 6;
 let mWidth = (innerWidth  - (innerWidth % unit));
 let mHeight = (innerHeight - (innerHeight % unit));
 let density;
@@ -16,7 +16,7 @@ function setup() {
 
     let heroiGenerator = new HeroiGenerator();
 
-    heroi = new Heroi(heroiGenerator.gerarImagens(), 10, 5 * unit, cenarioGenerator.nivelMinChao - 13 * unit);
+    heroi = new Heroi(heroiGenerator.gerarImagens(), 10, 5 * unit, cenarioGenerator.nivelMinChao - 10 * unit);
 }
 
 function draw() {
